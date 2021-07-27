@@ -42,15 +42,15 @@ spring:
     gateway:
       routes:
         - id: Book
-          uri: http://Books:8080
+          uri: http://Book:8080
           predicates:
             - Path=/books/**
         - id: Museum
-          uri: http://Museums:8080
+          uri: http://Museum:8080
           predicates:
             - Path=/museums/** 
         - id: Confirm
-          uri: http://Confirms:8080
+          uri: http://Confirm:8080
           predicates:
             - Path=/confirms/**
         - id: MyPage
